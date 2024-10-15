@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 10</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                El león y la liebre
+                <br><br>
+                Vivía en una montaña un león llamado Durdanta que se entretenía en matar por capricho a toda clase de animales. Un buen día estos se reunieron en asamblea y decidieron enviarle una embajada.
+                -Señor -le dijeron-, ¿por qué destruís así, sin ton ni son, a los animales? Tened paciencia. Todos los días escogeremos y os enviaremos a uno de nosotros para que os alimentéis.
+                <br><br>
+                Y así fue. El león, a partir de entonces, devoró todos los días a uno de aquellos animales.
+                <br><br>
+                Pero, cuando le llegó el turno a una liebre vieja, esta se dijo para sus adentros:
+                -Solamente se obedece a aquél a quien se teme, y eso para conservar la vida. Si he de morir, ¿de qué me servirá obedecer al león? Voy, pues, a tomarme el asunto con mucha calma y mucho tiempo. No puede costarme más que la vida y ésa ya la tengo perdida.
+                <br><br>
+                Así, pues, se puso tranquilamente en marcha y se iba deteniendo por el camino, aquí y allá, para contemplar el paisaje y masticar algunas sabrosas raíces.
+                <br><br>
+                Por fin, después de muchos días, llegó a donde estaba el león y éste, que tenía hambre atrasada, le preguntó muy colérico:
+                -¿Por qué diablos vienes tan tarde?
+                <br><br>
+                -Yo no tengo la culpa -respondió la liebre-. Otro león me ha retenido a la fuerza y me ha obligado a jurarle que volvería a su lado. Por eso, en cuanto pude, he venido a decírselo a vuestra majestad.
+                <br><br>
+                -¡Llévame pronto cerca de ese miserable que desconoce mi poder! -dijo el león Durdanta encolerizado.
+                <br><br>
+                La liebre condujo al rey león junto a un pozo muy profundo y le dijo:
+                -Mirad, señor, el atrevido e insolente está ahí abajo en el fondo de su cueva.
+                <br><br>
+                Y mostró al león su propia imagen reflejada en el agua del pozo. El león Durdanta, el rey de la montaña, hinchado de orgullo, no pudo dominar su rabia y, queriendo aplastar a su rival, se precipitó dentro del pozo, en donde encontró la muerte.
+                <br><br>
+                Lo cual prueba que la inteligencia es más importante que la fuerza y que la fuerza sin la inteligencia no sirve de nada.
+                <br><br>
+                Fábula del Panchatantra indio ¿s. III a.C.?- 360 palabras.
+            </p>
+                   
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
